@@ -1,0 +1,174 @@
+/*****************************************************
+ *
+ *  Custom theme css to override the adhocracy css
+ *
+ ******************************************************/
+
+body {
+    background-color: #081F2B;
+    font-family: Arial, Helvetica, sans-servif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+div.old-body {
+    background: #fff;
+}
+
+#nw-wrapper {
+    position: relative;
+    width: 1004px;
+    margin: 0 auto;
+
+    header {
+        padding-top: 10px + 180px + 10px;
+    }
+}
+
+#nw-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 180px;
+    height: 180px;
+}
+
+#nw-logo {
+    position: absolute;
+    background: url('/static_theme/static/images/logo.png');
+    top: 180px + 10px - 106px;
+    left: 10px + 180px + 15px;
+    width: 500px;
+    height: 106px;
+}
+
+#nw-img-left {
+    position: absolute;
+    background: url('/static_theme/static/images/bg_links.png');
+    top: 300px;
+    left: -128px;
+    width: 128px;
+    height: 249px;
+}
+
+#nw-img-right {
+    position: absolute;
+    background: url('/static_theme/static/images/bg_rechts.png');
+    top: 0px;
+    left: 820px;
+    width: 296px;
+    height: 240px;
+}
+
+#nw-topnav {
+    background-color: #056490;
+    padding: 2px 5px;
+    margin: 0px;
+    color: #fff;
+    height: 20px;
+
+    a {
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+#nw-topnav-left, #nw-topnav-right {
+    &.hlist > ul {
+        list-style: none;
+        display: inline;
+        position: relative;
+
+        > li {
+            display: inline-block;
+        }
+
+        > li:not(:last-child):after {
+            content: " | ";
+        }
+
+        > li:hover ul.children {
+            width: 100px;
+            background-color: $button-color;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            display: block;
+            z-index: 100;
+            > li {
+                display: block;
+            }
+        }
+        > li ul.children {
+            display: none;
+        }
+
+    }
+}
+
+#nw-topnav-left {
+    float: left;
+}
+#nw-topnav-right {
+    float: right;
+}
+
+#subheader {
+    background: none;
+    background-color: $bg1;
+    border-bottom: 1px solid $button-color;
+}
+
+#subnav {
+    padding-left: 20px;
+    li {
+        height: 36px;
+        line-height: 36px;
+
+        a {
+            color: $button-color;
+            background-color: $bg1;
+            background-image: none;
+            &:hover {
+                background-color: darken(#fff, 7%);
+                @include background-image(linear-gradient(to bottom, $bg1, lighten($button-color, 50%)));
+            }
+        }
+        &.current {
+            a {
+                @include button($button-color);
+            }
+        }
+    }
+}
+
+#instance_settings {
+    padding-right: 20px;
+}
+
+#footer {
+    border-top: 1px solid $button-color;
+    background: none;
+
+    .page_wrapper {
+        background: none;
+        padding: 10px 20px;
+    }
+}
+
+#col3 h3 {
+    border-bottom: 1px solid $primary-color;
+}
+
+// real sidebar links should be black and underlined
+.sidebar_box {
+    a.button_small {
+        text-decoration: none;
+        color: #fff;
+    }
+    a {
+        text-decoration: underline;
+        color: $black;
+    }
+}

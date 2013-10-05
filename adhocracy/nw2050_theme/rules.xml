@@ -1,0 +1,43 @@
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <theme href="theme.html" />
+
+  <rules if-content="/html/body/div[@id='main']" if-not-path="*.overlay">
+
+    <!-- Head: meta -->
+    <drop theme="/html/head/meta" if-content="/html/head/meta"/>
+    <prepend theme="/html/head" content="/html/head/meta" />
+    <!-- Head: base tag -->
+    <replace theme="/html/head/base" content="/html/head/base" />
+    <!-- Head: styles and scripts-->
+    <drop theme="/html/head/link[not(contains(@href, 'style_custom.css')) and contains(@rel, 'stylesheet')]" if-content="/html/head/link"/>
+    <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
+    <drop theme="/html/head/script" if-content="/html/head/script"/>
+    <append theme="/html/head" content="/html/head/script" />
+    <append theme="/html/head" content="/html/head/style" />
+    <!-- RSS -->
+    <replace theme="/html/head/link[contains(@type, 'application/rss+xml')]" content="/html/head/link[contains(@type, 'application/rss+xml')]" />
+    <!-- Favicon -->
+    <replace theme="/html/head/link[contains(@rel, 'icon')]" content="/html/head/link[contains(@rel, 'icon')]" />
+    <!--Conditional comments-->
+    <append theme="/html/head">
+      <xsl:for-each select="/html/head/comment()">
+        <xsl:copy />
+      </xsl:for-each>
+    </append>
+
+    <!--Body-->
+    <drop theme="/html/body/div/div[@class='old-body']/*" if-content="/html/body"/>
+    <append theme="/html/body/div/div[@class='old-body']" content="/html/body/*" />
+
+    <append css:theme="#nw-topnav-right > ul" css:content="#user_menu" />
+    <append css:theme="#nw-topnav-right > ul" css:content="#nav_login" />
+    <drop content="/html/body/header" />
+
+
+  </rules>
+</rules>
