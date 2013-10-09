@@ -142,3 +142,20 @@ $button-color-orig: #888;
 a.follow_paper:before {
     @include button-background($button-color-orig);
 }
+
+#col1 .content_list {
+    > li {
+        background: none;
+        border-bottom: 1px dotted $border;
+
+        &:last-child {
+            border: none;
+        }
+        &:first-child {
+            border-top: none;
+        }
+    }
+}
+#col1 .pager_wrapper {
+    border-top: 3px solid $primary-color;
+}
