@@ -31,8 +31,7 @@
     </append>
 
     <!--Body-->
-    <drop theme="/html/body/div/div[@class='old-body']/*" if-content="/html/body"/>
-    <append theme="/html/body/div/div[@class='old-body']" content="/html/body/*" />
+    <append theme="/html/body" content="html/body/*" />
 
     <append css:theme="#nw-topnav-right > ul" css:content="#user_menu" />
     <append css:theme="#nw-topnav-right > ul" css:content="#nav_login" />
