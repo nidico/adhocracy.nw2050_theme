@@ -41,8 +41,11 @@
     <replace css:content="#second_footer_line">
         <div id="second_footer_line">
             <div class="c33l footer_content" id="footer_1">
+                <a href="http://partou.org">
+                    <img alt="partou eG online beteiligung" src="/static_theme/static/images/partou.png" />
+                </a>
                 <a href="http://www.idelphi.net?unid=7c99341994b6f7ae547e797ebc54eae3">
-                    <img class="idlink" src="/static_theme/static/images/idelphi_logo90.gif" />
+                    <img class="idlink" alt="iDelphi" src="/static_theme/static/images/idelphi_logo90.gif" />
                 </a>
             </div>
             <div class="c33l footer_content" id="footer_2">
