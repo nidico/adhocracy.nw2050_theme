@@ -26,6 +26,14 @@ body {
         padding: 10px 0 60px;
     }
 }
+#main .page_wrapper {
+    padding-left: 20px;
+
+    .full_teaser,
+    #col1_content {
+        padding-left: 0;
+    }
+}
 html.overlay #main .page_wrapper {
     padding: 0;
 }
