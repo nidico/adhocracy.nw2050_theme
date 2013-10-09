@@ -35,4 +35,12 @@ sed -i de/LC_MESSAGES/adhocracy.po \
 -e 's/Themenrechte/Gruppenrechte/g' \
 -e 's/aus Ihrer eigenen Thema ausschließen/aus Ihrer eigenen Gruppe ausschließen/g' \
 -e 's/anstatt der normalen Thema des Users/anstatt der normalen Gruppe des Users/g' \
--e 's/Ordne alle User mit diesem Badge automatisch dem gewählten Thema zu/Ordne alle User mit diesem Badge automatisch der gewählten Gruppe zu/g'
+-e 's/Ordne alle User mit diesem Badge automatisch dem gewählten Thema zu/Ordne alle User mit diesem Badge automatisch der gewählten Gruppe zu/g' \
+\
+-e 's/Mitgliedschaften/Teilnehmer/g' \
+-e 's/Mitgliedschaft/Teilnahme/g' \
+-e 's/Mitglieder/Teilnehmer/g' \
+-e 's/Mitglied/Teilnehmer/g' \
+\
+-e 's/Themen, in denen Sie Teilnehmer sind/Themen, bei denen Sie sich beteiligen/g' \
+-e 's/ist Teilnehmer in/beteiligt sich an/g'

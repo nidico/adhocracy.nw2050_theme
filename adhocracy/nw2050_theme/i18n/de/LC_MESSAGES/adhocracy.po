@@ -50,7 +50,7 @@ msgstr "Solr Index aktualisiert."
 
 #, python-format
 msgid "Autojoin fixed - added %s memberships."
-msgstr "Autojoin korrigiert - %s Mitgliedschaften hinzugefügt."
+msgstr "Autojoin korrigiert - %s Teilnehmer hinzugefügt."
 
 msgid ""
 "Requested generation of welcome codes, but welcome "
@@ -158,7 +158,7 @@ msgid "Mass message service"
 msgstr "Benachrichtigungsdienst"
 
 msgid "Members import"
-msgstr "Mitglieder importieren"
+msgstr "Teilnehmer importieren"
 
 msgid "Instance created successfully. You can now configure it as you like."
 msgstr "Thema erfolgreich angelegt. Sie können es nun nach Ihrem Bedarf konfigurieren."
@@ -218,7 +218,7 @@ msgstr "Willkommen in %(instance)s"
 
 #, python-format
 msgid "You're not a member of %(instance)s."
-msgstr "Sie sind kein Mitglied von %(instance)s."
+msgstr "Sie sind kein Teilnehmer von %(instance)s."
 
 #, python-format
 msgid "You're the founder of %s, cannot leave."
@@ -527,7 +527,7 @@ msgid "Optional"
 msgstr "Optional"
 
 msgid "tutorial_user_index_intro"
-msgstr "Mitgliederliste des Themas."
+msgstr "Teilnehmerliste des Themas."
 
 msgid "Sorry, registration has been disabled by administrator."
 msgstr "Es tut uns leid - Registrierung ist in dieser Installation deaktiviert."
@@ -682,7 +682,7 @@ msgstr "%(user)ss Aktivitäten"
 
 #, python-format
 msgid "%s is not a member of %s"
-msgstr "%s ist kein Mitglied von %s"
+msgstr "%s ist kein Teilnehmer von %s"
 
 #, python-format
 msgid "%s is banned from the system."
@@ -917,7 +917,7 @@ msgid "%d days"
 msgstr "%d Tage"
 
 msgid "Voter"
-msgstr "Mitglied"
+msgstr "Teilnehmer"
 
 msgid "Observer"
 msgstr "BeobachterIn"
@@ -1396,11 +1396,11 @@ msgstr "Sie haben die Delegation von %(user)s auf %(scope)s verloren"
 
 #, python-format
 msgid "Membership: You've been kicked from %(instance)s"
-msgstr "Mitgliedschaft: Sie wurden aus %(instance)s ausgeschlossen"
+msgstr "Teilnahme: Sie wurden aus %(instance)s ausgeschlossen"
 
 #, python-format
 msgid "Membership: you're now a %(group)s in %(instance)s"
-msgstr "Mitgliedschaft: Sie sind jetzt ein %(group)s in %(instance)s"
+msgstr "Teilnahme: Sie sind jetzt ein %(group)s in %(instance)s"
 
 #, python-format
 msgid "Your vote %(vote)s %(poll)s"
@@ -1614,7 +1614,7 @@ msgstr "Impressum"
 
 #, python-format
 msgid "<b>%s</b> members"
-msgstr "<b>%s</b> Mitglieder"
+msgstr "<b>%s</b> Teilnehmer"
 
 #, python-format
 msgid "<b>%s</b> proposals"
@@ -1678,7 +1678,7 @@ msgid "Norms"
 msgstr "Beschlüsse"
 
 msgid "Members"
-msgstr "Mitglieder"
+msgstr "Teilnehmer"
 
 #, python-format
 msgid "%(start)s-%(end)s out of %(total)s"
@@ -2021,7 +2021,7 @@ msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt:"
 msgid ""
 "You successfully created the following users and added them as Members to "
 "the instance \"%s\":"
-msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt und sie als Mitglieder des Themas \"%s\" hinzugefügt:"
+msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt und sie als Teilnehmer des Themas \"%s\" hinzugefügt:"
 
 msgid "The following errors happend while creating the users"
 msgstr "Die folgenden Fehler traten während der Erstellung der Benutzer auf"
@@ -2574,7 +2574,7 @@ msgstr "Die Adresse darf nur alphanumerische Zeichen enthalten. Bitte beachten S
 msgid ""
 "Describe what the goals of this instance are and who constitutes its "
 "community."
-msgstr "Beschreiben Sie die Ziele dieses Themas und wer die Mitglieder sind."
+msgstr "Beschreiben Sie die Ziele dieses Themas und wer die Teilnehmer sind."
 
 msgid "(Both Markdown and HTML are allowed here.)"
 msgstr "(Markdown und HTML sind hier erlaubt.)"
@@ -2614,7 +2614,7 @@ msgid "Use Norms"
 msgstr "Beschlüsse verwenden"
 
 msgid "Allow users to propose norms"
-msgstr "Mitgliedern erlauben, neue Beschlüsse anzulegen"
+msgstr "Teilnehmern erlauben, neue Beschlüsse anzulegen"
 
 msgid "Allow users to change norms from within proposals"
 msgstr ""
@@ -2651,7 +2651,7 @@ msgid ""
 msgstr "Die Spracheinstellungen des jeweiligen Benutzers heben diese allgemeinen Spracheinstellungen auf."
 
 msgid "Default group"
-msgstr "Nutzerrolle für neue Mitglieder"
+msgstr "Nutzerrolle für neue Teilnehmer"
 
 msgid "Hide this instance"
 msgstr "Diese Thema verbergen"
@@ -2739,7 +2739,7 @@ msgstr "nach Anzahl"
 
 #, python-format
 msgid "<b>%s</b> community members"
-msgstr "<b>%s</b> Mitglieder"
+msgstr "<b>%s</b> Teilnehmer"
 
 msgid "tutorial_instance_proposals_table"
 msgstr "Hier finden Sie eine Liste der neuesten Vorschläge."
@@ -2751,7 +2751,7 @@ msgid "Close"
 msgstr "Schließen"
 
 msgid "tutorial_instance_numbers"
-msgstr "Hier finden Sie noch eine kurze Information über die aktuelle Mitgliederzahl des Themas, der Anzahl der eingebrachten Vorschläge und der geschriebenen Argumente."
+msgstr "Hier finden Sie noch eine kurze Information über die aktuelle Teilnehmerzahl des Themas, der Anzahl der eingebrachten Vorschläge und der geschriebenen Argumente."
 
 #, python-format
 msgid "%s proposal"
@@ -3830,7 +3830,7 @@ msgid ""
 "This is your Dashboard. Here you can find the list of instances your a "
 "member in, norms and proposals from these instance and a list of the pages "
 "you follow."
-msgstr "Dies ist Ihr Dashboard. Hier finden Sie eine Liste der Themen, in denen Sie Mitglied sind, Beschlüsse und Vorschläge dieser Themen und eine Liste der Vorschläge, Termine und Benutzer, denen Sie folgen."
+msgstr "Dies ist Ihr Dashboard. Hier finden Sie eine Liste der Themen, bei denen Sie sich beteiligen, Beschlüsse und Vorschläge dieser Themen und eine Liste der Vorschläge, Termine und Benutzer, denen Sie folgen."
 
 #, python-format
 msgid "You can also return to the <a href=\"%s\">Page you came from</a>."
@@ -3861,7 +3861,7 @@ msgid "tutorial_dashboard_show_all"
 msgstr "Durch einen Klick auf \"Zeige alle\" können Sie sich die vollständige Liste aller Vorschläge anzeigen lassen."
 
 msgid "tutorial_dashboard_instances"
-msgstr "Hier finden Sie eine Liste der Themen, in denen Sie Mitglied sind. Durch einen Klick auf den Themennamen gelangen Sie zum Thema."
+msgstr "Hier finden Sie eine Liste der Themen, bei denen Sie sich beteiligen. Durch einen Klick auf den Themennamen gelangen Sie zum Thema."
 
 msgid "tutorial_dashboard_watchlist"
 msgstr "In der Beobachtungsliste finden Sie Inhalte, denen sie folgen. Durch einen Klick auf \"Zeige alle\" erhalten Sie eine Übersicht über alle Vorschläge, Termine und Benutzer denen Sie folgen."
@@ -3891,7 +3891,7 @@ msgid "Find users"
 msgstr "Benutzer suchen"
 
 msgid "tutorial_user_index_table"
-msgstr "Die Liste zeigt Ihnen alle Mitglieder des Themas an. Sie können die Liste sortieren."
+msgstr "Die Liste zeigt Ihnen alle Teilnehmer des Themas an. Sie können die Liste sortieren."
 
 msgid "tutorial_user_index_facets"
 msgstr "Oder filtern Sie die Liste nach Nutzergruppen."
@@ -3905,7 +3905,7 @@ msgstr "Adhocracies"
 
 #, python-format
 msgid "%s is a member in these Adhocracies"
-msgstr "%s ist Mitglied in den folgenden Themen"
+msgstr "%s beteiligt sich an den folgenden Themen"
 
 msgid "Who are you, then?"
 msgstr "Und wer sind Sie? "
