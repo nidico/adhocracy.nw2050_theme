@@ -38,6 +38,24 @@
     <append css:theme="#nw-topnav-right > ul" css:content="#nav_login" />
     <drop content="/html/body/header" />
 
+    <replace css:content="#second_footer_line">
+        <div id="second_footer_line">
+            <div class="c33l footer_content" id="footer_1">
+                <a href="http://www.idelphi.net?unid=7c99341994b6f7ae547e797ebc54eae3">
+                    <img class="idlink" src="/static_theme/static/images/idelphi_logo90.gif" />
+                </a>
+            </div>
+            <div class="c33l footer_content" id="footer_2">
+                <span rel="copyright">
+                    Copyright ecolo<br/>
+                    ecolo - Jakobistr. 20 - D-28195 Bremen - <a href="http://www.ecolo-bremen.de">www.ecolo-bremen.de</a>
+                </span>
+            </div>
+            <div class="c33r footer_content" id="footer_3">
+                <img src="/static_theme/static/images/bmbf.png"/>
+            </div>
+        </div>
+    </replace>
 
   </rules>
 </rules>

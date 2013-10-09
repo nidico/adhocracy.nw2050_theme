@@ -9,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-servif;
     font-weight: normal;
     font-size: 12px;
+    padding-bottom: 2em;
 }
 
 div.old-body {
@@ -148,12 +149,28 @@ div.old-body {
 }
 
 #footer {
+    font-size: 9px;
     border-top: 1px solid $button-color;
     background: none;
 
     .page_wrapper {
         background: none;
         padding: 10px 20px;
+    }
+
+    #second_footer_line {
+        width: 100%;
+        .footer_content {
+            vertical-align: middle;
+            border: none;
+        }
+        #footer_1 {
+            text-align: center;
+            width: 16%
+        }
+        #footer_3 {
+            text-align: right;
+        }
     }
 }
 
