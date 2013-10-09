@@ -136,3 +136,9 @@ html.overlay #main .page_wrapper {
     padding: 1em 1.5em;
     margin-top: 2.5em;
 }
+
+// original button color in follow_paper button
+$button-color-orig: #888;
+a.follow_paper:before {
+    @include button-background($button-color-orig);
+}
