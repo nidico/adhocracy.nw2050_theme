@@ -5,8 +5,9 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <theme href="theme.html" />
+  <notheme css:if-not-content="#header" />
 
-  <rules if-content="/html/body/div[@id='main']" if-not-path="*.overlay">
+  <rules if-content="/html/body/div[@id='main']">
 
     <!-- Head: meta -->
     <drop theme="/html/head/meta" if-content="/html/head/meta"/>
