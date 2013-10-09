@@ -125,3 +125,14 @@ html.overlay #main .page_wrapper {
         color: $black;
     }
 }
+
+// sidebar box style
+#col3_content {
+    background: none;
+    padding: 0;
+}
+.sidebar_box {
+    background: $bg1;
+    padding: 1em 1.5em;
+    margin-top: 2.5em;
+}
