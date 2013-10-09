@@ -1,0 +1,53 @@
+.nw-tile {
+    float: left;
+    height: 266px;
+    width: 261px;
+    margin: 16px 21px;
+    background-color: $bg1;
+    padding: 10px 8px;
+    padding-bottom: 3em;
+    position: relative;
+    .more_link {
+        position: absolute;
+        left: 8px;
+        bottom: 10px;
+    }
+
+    border-top: 1px solid $primary-color;
+
+    img {
+        width: 261px;
+        height: 140px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 22px;
+        margin: 2px 0;
+    }
+
+    font-size: 0.9em;
+    color: $fg1;
+    .description {
+        max-height: 90px;
+        overflow: hidden;
+    }
+
+    .more_link {
+        color: $black;
+        &:before {
+            color: $primary-color;
+        }
+    }
+
+    overflow: hidden;
+}
+
+a.nw-tile {
+    &:hover {
+        @include background-image(linear-gradient(to top, #cecece, #e6e6e6 8%, $bg1));
+    }
+    text-decoration: none;
+}
