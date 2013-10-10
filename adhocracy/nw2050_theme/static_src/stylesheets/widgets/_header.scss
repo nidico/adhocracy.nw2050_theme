@@ -63,6 +63,8 @@ header {
         }
     }
     > div > ul > li {
+        position: relative;
+
         &:not(:last-child):after {
             content: " | ";
         }
