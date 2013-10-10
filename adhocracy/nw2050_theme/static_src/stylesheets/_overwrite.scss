@@ -55,6 +55,12 @@ html.overlay #main .page_wrapper {
         background-color: $flash;
     }
 }
+#welcome_message {
+    .page_wrapper {
+        // avoid margin collapsing
+        padding-top: 1px;
+    }
+}
 
 #subnav {
     padding-left: 20px;
