@@ -34,8 +34,10 @@
     <!--Body-->
     <append theme="/html/body" content="html/body/*" />
 
-    <append css:theme="#nw-topnav-right > ul" css:content="#user_menu" />
-    <append css:theme="#nw-topnav-right > ul" css:content="#nav_login" />
+    <drop css:content="#nav_home" />
+    <drop css:content="#nav_instances" />
+    <drop css:content="#nav_watchlist" />
+    <append css:theme="#nw-topnav-right" css:content="#nav .menu > ul" />
     <drop content="/html/body/header" />
 
     <replace css:content="#second_footer_line">
