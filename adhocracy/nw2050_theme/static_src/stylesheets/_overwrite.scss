@@ -158,6 +158,10 @@ a.follow_paper:before {
         }
     }
 }
+#col1 .content_nav,
 #col1 .pager_wrapper {
     border-top: 3px solid $primary-color;
+}
+#col1 .content_nav + div .pager_wrapper {
+    border-top: none;
 }
